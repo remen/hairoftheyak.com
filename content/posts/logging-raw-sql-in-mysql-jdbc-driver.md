@@ -7,7 +7,7 @@ I recently wanted to see exactly what SQL statements were being executed by
 Hibernate/JPA. In this post, I show a simple solution using built-in
 capabilities in the MySQL JDBC driver.
 
-<!-- more -->
+<!--more-->
 
 ## What I wanted to accomplish
 
@@ -15,7 +15,7 @@ capabilities in the MySQL JDBC driver.
   copy/pasted into an SQL console.
 * Preferably, the logging would be implemented by myself using some sort of
   event handler, since I wanted control over the logging logic in order to add
-  [structured logging]().
+  [structured logging](https://www.elastic.co/blog/structured-logging-filebeat).
 * Pretty-printing is nice, but not a requirement.
 
 After some experimenting, this ruled out
