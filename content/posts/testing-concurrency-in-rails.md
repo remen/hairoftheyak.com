@@ -1,27 +1,20 @@
 ---
 title: "Testing concurrency in rails"
-date: 2019-07-27T14:50:19+02:00
+date: 2012-07-02T08:00:00+02:00
 draft: true
 aliases:
   - /testing-concurrency-in-rails
 ---
 
-## Updates
----
+Concurrency is hard to get right, and unfortunately it is hard to test as well.
+In this article, we show how to use the ruby gem
+[fork_break](http://github.com/remen/fork_break) to manually set breakpoints
+within tests which allows us to verify concurrent behaviour.
 
-[2019-07-27] Time flies. The original post was deleted along with the comments,
-due to me forgetting to update the credit card with the web host provider.
-Resurrected the post using the wayback machine. NB: I no longer use ruby on
-rails professionally so I don't know how much of this still applies.
-
-[2013-05-15] Updated code example to work with postgresql. Many thanks to Carlos
-Alonso in the comments for finding both the problem and the solution!
-
----
+<!--more-->
 
 ## A race condition
 
-Concurrency is hard to get right, and unfortunately it is hard to test as well.
 Let's start with a simple controller action.
 
 ```ruby
@@ -192,3 +185,16 @@ original code fails)
 Thanks to
 http://blog.ardes.com/2006/12/12/testing-concurrency-in-rails-using-fork for
 getting me started on this.
+
+## Updates
+---
+
+[2019-07-27] Time flies. The original post was deleted along with the comments,
+due to me forgetting to update the credit card with the web host provider.
+Resurrected the post using the wayback machine. NB: I no longer use ruby on
+rails professionally so I don't know how much of this still applies.
+
+[2013-05-15] Updated code example to work with postgresql. Many thanks to Carlos
+Alonso in the comments for finding both the problem and the solution!
+
+---
