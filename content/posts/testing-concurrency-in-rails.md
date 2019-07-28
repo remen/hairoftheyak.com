@@ -1,7 +1,6 @@
 ---
 title: "Testing concurrency in rails"
 date: 2012-07-02T08:00:00+02:00
-draft: true
 aliases:
   - /testing-concurrency-in-rails
 ---
