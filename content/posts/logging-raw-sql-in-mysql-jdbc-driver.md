@@ -69,7 +69,7 @@ public class MySQLQueryLogger implements ProfilerEventHandler {
 Using the above, I could now see the following in my logs:
 
 ```
-Application      : Saving two new customes
+Application      : Saving two new customers
 MySQLQueryLogger : SET autocommit=1; /* 1ms */
 MySQLQueryLogger : SET sql_mode='STRICT_TRANS_TABLES'; /* 1ms */
 MySQLQueryLogger : SET autocommit=0; /* 0ms */
