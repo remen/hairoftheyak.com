@@ -37,14 +37,14 @@ public DataSource mysqlDataSource() throws SQLException {
     // ... more lines here setting user, password, etc.
     dataSource.setProfileSQL(true);
     dataSource.setProfilerEventHandler(
-        MySQLQueryLogger.class.getCanonicalName()
+        MySQLQueryLogger.class.getName()
     );
     return dataSource;
 }
 ```
 
 ```java
-public class MySQLQueryLogger implements ProfilerEventHandler {
+public class MySQLQueryLogger extends LoggingProfilerEventHandler {
     private final Logger logger = LoggerFactory.getLogger(MySQLQueryLogger.class);
 
     @Override
