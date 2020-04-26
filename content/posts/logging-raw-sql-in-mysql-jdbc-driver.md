@@ -57,12 +57,6 @@ public class MySQLQueryLogger extends LoggingProfilerEventHandler {
             );
         }
     }
-
-    @Override
-    public void init(Log log) {}
-
-    @Override
-    public void destroy() {}
 }
 ```
 
